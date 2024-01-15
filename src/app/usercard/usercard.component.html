@@ -1,0 +1,10 @@
+<div class="card" style="width: 20.5rem;">
+    <img [src]="userItem.image" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{userItem.username}}</h5>
+        <p>{{userItem.email}}</p>
+        <p>{{userItem.phone}}</p>
+        @if (userItem.is_verified) {<button type="button" class="btn btn-success">verified</button>}
+        @else {<button type="button" class="btn btn-danger">not verified</button>}
+    </div>
+</div>
